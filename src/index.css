@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 252 77% 75%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    border-color: hsl(var(--border));
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+
+  p {
+    @apply leading-7;
+  }
+}
+
+@layer components {
+  .neon-shadow {
+    @apply transition-all duration-300;
+  }
+
+  .neon-shadow:hover {
+    @apply shadow-[0_0_15px_3px_#9b87f5];
+  }
+
+  .neon-text {
+    @apply text-primary transition-all duration-300;
+  }
+
+  .neon-text:hover {
+    @apply text-neon-purple/90 drop-shadow-[0_0_6px_#9b87f5];
+  }
+
+  .neon-border {
+    @apply border-primary/60 transition-all duration-300;
+  }
+
+  .neon-border:hover {
+    @apply border-neon-purple shadow-[0_0_10px_1px_#9b87f5];
+  }
+
+  .card-glass {
+    @apply bg-black/40 backdrop-blur-md border border-white/10 rounded-2xl transition-all duration-300 shadow-sm;
+  }
+
+  .card-glass:hover {
+    @apply bg-black bg-opacity-50 shadow-md transform -translate-y-1;
+  }
+
+  .animate-on-scroll {
+    @apply opacity-0 translate-y-8 transition-all duration-700;
+  }
+
+  .animate-on-scroll.visible {
+    @apply opacity-100 translate-y-0;
+  }
+
+  /* Glass button effect */
+  .btn-glass {
+    @apply backdrop-blur-sm bg-black/20 border border-white/10
+    hover:bg-black/30 transition-all duration-300 shadow-sm text-white;
+  }
+
+  /* Hover lift effect */
+  .hover-lift {
+    @apply transition-transform duration-300 hover:-translate-y-1 hover:shadow-md;
+  }
+
+  /* Border glow effect */
+  .border-glow {
+    @apply border border-transparent transition-all duration-300;
+  }
+
+  .border-glow:hover {
+    @apply border-primary/60 shadow-[0_0_10px_rgba(155,135,245,0.3)];
+  }
+
+  /* Smooth fade in animation */
+  .fade-in {
+    animation: fadeIn 0.8s ease-in forwards;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Scale effect on hover */
+  .scale-on-hover {
+    @apply transition-transform duration-300 hover:scale-105;
+  }
+
+  /* Add styles for elements with black backgrounds */
+  .bg-black, [class*="bg-black/"] {
+    @apply text-white;
+  }
+
+  /* Ensure text is white in dark overlays */
+  [class*="bg-black/80"], [class*="bg-black/50"], [class*="bg-black/40"] {
+    @apply text-white;
+  }
+}
