@@ -1,8 +1,13 @@
 {
-  "name": "vite_react_shadcn_ts",
+  "name": "mr-rockey-portfolio",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "homepage": "https://mrrockey.github.io",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrRockeY/MrRockeY.github.io.git"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

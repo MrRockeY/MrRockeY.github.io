@@ -37,43 +37,9 @@ This is my personal portfolio website showcasing my professional journey, skills
 - **Performance**: Dynamic imports & lazy loading
 - **Deployment**: GitHub Pages with custom domain
 
-## 📂 Project Architecture
+## 📂 Project Structure
 
 ```
-src/
-├── components/     # Reusable UI components
-│   ├── layout/    # Layout components
-│   ├── shared/    # Shared components
-│   └── sections/  # Page sections
-├── contexts/      # React context providers
-├── hooks/         # Custom React hooks
-├── lib/           # Utility functions
-├── styles/        # Global styles
-└── pages/         # Page components
-```
-
-## 🔒 Security & Privacy
-
-This repository contains proprietary code and personal information. It is:
-- Private and not for public distribution
-- Protected by copyright law
-- Contains sensitive configuration data
-
-## 🚀 Live Website
-
-**Portfolio URL**: [https://mrrockey.github.io](https://mrrockey.github.io)
-
-## 📜 License & Copyright
-
-© 2025 Mr. RockeY. All Rights Reserved.
-
-This project is private and confidential. No part of this project may be reproduced, distributed, or transmitted in any form or by any means without the prior written permission of the owner.
-
----
-*Built with ❤️ by Mr. RockeY*
-
-#Project Structure
-
 📁 Root
 ├── 📄 README.md                 # Project documentation
 ├── 📄 package.json             # Project dependencies and scripts
@@ -115,3 +81,24 @@ This project is private and confidential. No part of this project may be reprodu
 │   └── 📁 workflows/          # GitHub Actions
 │
 └── 📁 .vscode/                 # VS Code configurations
+```
+
+## 🔒 Security & Privacy
+
+This repository contains proprietary code and personal information. It is:
+- Private and not for public distribution
+- Protected by copyright law
+- Contains sensitive configuration data
+
+## 🚀 Live Website
+
+**Portfolio URL**: [https://mrrockey.github.io](https://mrrockey.github.io)
+
+## 📜 License & Copyright
+
+© 2025 Mr. RockeY. All Rights Reserved.
+
+This project is private and confidential. No part of this project may be reproduced, distributed, or transmitted in any form or by any means without the prior written permission of the owner.
+
+---
+*Built with ❤️ by Mr. RockeY*
