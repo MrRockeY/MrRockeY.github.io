@@ -11,7 +11,7 @@ export default defineConfig(({ mode }) => ({
   plugins: [
     react(),
   ],
-  base: "/MrRockeY.github.io/",
+  base: "/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
